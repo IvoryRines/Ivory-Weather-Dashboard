@@ -53,7 +53,7 @@ const displayWeather = (data) => {
 
   // Update today's weather section
   weatherToday.innerHTML = `
-    <h3>${data.city_name} (${dayjs().format("MM/DD/YYYY")})
+    <h3>${data.city_name}, ${data.state_code} (${dayjs().format("MM/DD/YYYY")})
       <img src="${iconImageToday}" alt="Weather Icon" style="width: 50px; height: 50px;">
     </h3> 
     <p id="temp-today">Temp: ${data.data[0].temp}°F</p>
