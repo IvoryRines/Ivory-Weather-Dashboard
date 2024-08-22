@@ -1,0 +1,14 @@
+@media (max-width: 550px) {
+  #weather-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #weather-forecast .col {
+    width: 98%;
+    max-width: 100%; /* Ensure it doesn't try to maintain the grid column behavior */
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
